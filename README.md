@@ -7,4 +7,4 @@ This is a project the demonstrates some tips for programming in Typescript
 2. Forget `while`, use `for(;;)`
 3. Forget function parameters, use a function config
 4. Program to the interface
-5. Use generics whenever possible
+5. Remember the principles of Object Oriented Programming

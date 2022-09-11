@@ -1,5 +1,5 @@
 import {Flintstone, Jetson, Stooge} from './types';
-import { CartoonCharacter } from "./interfaces";
+import {CartoonCharacter} from './interfaces';
 
 export class Tips {
   getMoe(): Stooge {
@@ -19,7 +19,16 @@ export class Tips {
     if (!character.lastName) throw new Error('Last name is required.');
     let str = `The first name of the character is ${character.firstName}.\n`;
     str += `The last name of the character is ${character.lastName}`;
-
     console.log(str);
+  }
+}
+
+export class MoreTips extends Tips {
+  forLoop(phrase: string): void {
+    let x = 0;
+    for (;;) {
+      x++;
+      console.log(x + ':' + phrase);
+    }
   }
 }
